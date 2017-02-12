@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MENU</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="node_modules/angular-ui-bootstrap-datetimepicker/datetimepicker.css">
+    <link rel="stylesheet" href="node_modules/angular-toastr/dist/angular-toastr.css">
+    <link rel="stylesheet" href="node_modules/angular-ui-grid/ui-grid.css">
+    <link rel="stylesheet" href="node_modules/angular-material/angular-material.css">
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/oclazyload/dist/ocLazyLoad.js"></script>
+    <script src="node_modules/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-ui-grid/ui-grid.js"></script>
+    <script src="node_modules/angular-material/angular-material.js"></script>
+    <script src="node_modules/angular-i18n/angular-locale_pt-br.js"></script>
+
+    <script src="app/config/pd-prova.module.js"></script>
+    <script src="app/config/pd-prova.rotas.js"></script>
+    <script src="app/arquitetura/service/pd-service.js"></script>
+    <script src="app/arquitetura/service/pd-storage.service.js"></script>
+    <script src="app/arquitetura/service/roteador.service.js"></script>
+    <script src="app/views/estado/estado.service.js"></script>
+    <script src="app/arquitetura/service/pd-alert.service.js"></script>
+    <script src="app/arquitetura/directives/pd-super-crud/pd-super-crud.directive.js"></script>
+    <script src="app/arquitetura/directives/pd-input-text/pd-input.directive.js"></script>
+    <script src="app/arquitetura/directives/pd-panel/pd-panel.directive.js"></script>
+    <script src="app/controller/index.controller.js"></script>
+
+</head>
+
+<body ng-app="pdProva" ng-controller="IndexControle as vm" class="container">
+<div ui-view></div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>ESTADO</title>
+
+    <script src="cadastro-estado-controller.js"></script>
+
+</head>
+<body ng-app="pdProva" class="container">
+<div ng-controller="CadastroEstadoControle as vm">
+
+    <form name="formCadastro" novalidate>
+
+        <pd-super-crud titulo="Cadastro de estado"
+                       service="vm.estadoService">
+
+            <pd-super-crud-body>
+
+                <pd-input-text
+                        label="Código"
+                        ng-model="vm.estadoService.pdService.entidade.id"
+                        colspan="3"
+                        ng-disabled="true"
+                        ng-show="true"
+                        tipo="text"
+                        >
+                </pd-input-text>
+
+                <pd-input-text
+                        label="Nome"
+                        ng-model="vm.estadoService.pdService.entidade.nome"
+                        colspan="3"
+                        ng-show="true"
+                        tipo="text"
+                        ng-required="true">
+                </pd-input-text>
+
+                <pd-input-text
+                        label="Data Cadastro"
+                        ng-model="vm.estadoService.pdService.entidade.dataCadastro"
+                        colspan="3"
+                        ng-disabled="true"
+                        ng-show="vm.estadoService.pdService.entidade.dataCadastro"
+                        tipo="date"
+                >
+                </pd-input-text>
+
+            </pd-super-crud-body>
+        </pd-super-crud>
+    </form>
+</div>
+
+</body>
+</html>
